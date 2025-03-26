@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Colors -->
+    <color name="blue">#2196F3</color> <!-- Example for buttons and links -->
+    <color name="white">#FFFFFF</color> <!-- Background and button text -->
+    <color name="black">#000000</color> <!-- Text color -->
+    <color name="light_gray">#F5F5F5</color> <!-- Background or light sections -->
+
+    <!-- Accent Colors -->
+    <color name="red">#F44336</color> <!-- Error messages or warnings -->
+    <color name="green">#4CAF50</color> <!-- Success indicators -->
+
+    <!-- Custom Colors -->
+    <color name="transparent_black">#80000000</color> <!-- Semi-transparent overlay -->
+    <color name="gray">#9E9E9E</color> <!-- For less prominent text -->
+
+    <!-- Additional Colors -->
+    <color name="light_blue">#90CAF9</color> <!-- Lighter shade of blue -->
+    <color name="dark_blue">#1565C0</color> <!-- Darker shade of blue -->
+</resources>

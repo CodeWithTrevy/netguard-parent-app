@@ -1,0 +1,109 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <!-- App Title -->
+        <TextView
+            android:id="@+id/appTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:text="NetGuard App"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <!-- Email Address Input -->
+        <EditText
+            android:id="@+id/emailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Email address"
+            android:padding="12dp"
+            android:inputType="textEmailAddress"
+            android:drawablePadding="8dp"
+            android:background="@drawable/rounded_edittext"/> <!-- Set the background -->
+
+        <!-- Password Input -->
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:drawablePadding="8dp"
+            android:background="@drawable/rounded_edittext"/>
+        <!-- confirm password -->
+        <EditText
+            android:id="@+id/passwordConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:drawablePadding="8dp"
+            android:background="@drawable/rounded_edittext"/>
+
+
+        <!-- Remember Me Checkbox -->
+
+        <!-- SignUp Button -->
+        <CheckBox
+            android:id="@+id/rememberMe"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Remember me" />
+
+        <Button
+            android:id="@+id/signUpButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="SignUp"
+            android:backgroundTint="@color/blue"
+            android:textColor="@color/white" />
+
+        <!-- Divider Text -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="OR"
+            android:gravity="center"
+            android:layout_marginTop="12dp" />
+
+        <!-- Login with Google Button -->
+        <Button
+            android:id="@+id/loginWithGoogle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Sign Up with Google"
+            android:backgroundTint="@color/blue"
+            android:textColor="@color/black" />
+
+        <!-- Sign Up Text -->
+        <TextView
+            android:id="@+id/signUpText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Already have an account? login here"
+            android:gravity="center"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/blue" />
+    </LinearLayout>
+</ScrollView>
