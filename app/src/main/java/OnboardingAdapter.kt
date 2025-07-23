@@ -7,7 +7,11 @@ import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 import com.iconbiztechnologies1.mynetcape.R
 
-class OnboardingAdapter(private val images: List<Int>, private val context: Context) :
+class OnboardingAdapter(
+    private val images: List<Int>,
+    private val context: Context,
+    descriptions: List<String>
+) :
     RecyclerView.Adapter<OnboardingAdapter.OnboardingViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): OnboardingViewHolder {

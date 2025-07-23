@@ -1,3 +1,33 @@
+<!-- Add these to your strings.xml file -->
 <resources>
-    <string name="app_name">My Netcape</string>
+    <string name="app_name">NetGuard</string>
+
+    <!-- Screen Time Activity Strings -->
+    <string name="screen_time_title">Daily Screen Time Limit</string>
+    <string name="screen_time_title_desc">Screen time settings heading</string>
+    <string name="daily_screen_time_limit">Set Daily Screen Time</string>
+    <string name="daily_screen_time_limit_desc">Set how much screen time is allowed per day</string>
+    <string name="daily_reset_time">Daily Reset Time</string>
+    <string name="daily_reset_time_desc">Set when screen time resets each day</string>
+    <string name="save_settings">Save Settings</string>
+    <string name="save_settings_desc">Save screen time and reset time settings</string>
+    <string name="default_time_text">2 hours</string>
+    <string name="default_reset_time_text">Resets at 12:00 AM</string>
+    <string name="time_format_hours_minutes">%1$d hours and %2$d minutes</string>
+    <string name="reset_time_format">Resets at %1$s</string>
+    <string name="settings_saved">Settings saved successfully</string>
+    <string name="save_failed">Failed to save settings</string>
+    <string name="hours_picker_desc">Select hours for screen time limit</string>
+    <string name="minutes_picker_desc">Select minutes for screen time limit</string>
+    <string name="reset_hours_picker_desc">Select hour for daily reset time</string>
+    <string name="reset_minutes_picker_desc">Select minute for daily reset time</string>
+
+    <!-- Plurals for hour/minute formatting -->
+    <plurals name="hours_selected">
+        <item quantity="one">1 hour</item>
+        <item quantity="other">%d hours</item>
+    </plurals>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
 </resources>

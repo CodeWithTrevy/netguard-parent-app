@@ -11,6 +11,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import at.favre.lib.crypto.bcrypt.BCrypt
 
+
 class SignUpScreen : AppCompatActivity() {
 
 
@@ -69,6 +70,8 @@ class SignUpScreen : AppCompatActivity() {
                             db.collection("users").document(it) // Use userId as the document ID
                                 .set(user)
                                 .addOnSuccessListener {
+
+
                                     Toast.makeText(this, "Sign-up successful!", Toast.LENGTH_SHORT).show()
                                     startActivity(Intent(this, LoginActivity::class.java))
                                     finish()

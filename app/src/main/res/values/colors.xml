@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Progress bar colors for different usage levels -->
+    <color name="progress_high">#F44336</color>       <!-- Red for high usage -->
+    <color name="progress_medium">#FF9800</color>     <!-- Orange for medium usage -->
+    <color name="progress_low">#4CAF50</color>        <!-- Green for low usage -->
+    <color name="progress_minimal">#2196F3</color>    <!-- Blue for minimal usage -->
     <!-- Primary Colors -->
     <color name="blue">#2196F3</color> <!-- Example for buttons and links -->
     <color name="white">#FFFFFF</color> <!-- Background and button text -->
     <color name="black">#000000</color> <!-- Text color -->
     <color name="light_gray">#F5F5F5</color> <!-- Background or light sections -->
+    <color name="purple_500">#6200EE</color>
+
 
     <!-- Accent Colors -->
     <color name="red">#F44336</color> <!-- Error messages or warnings -->
@@ -17,4 +24,18 @@
     <!-- Additional Colors -->
     <color name="light_blue">#90CAF9</color> <!-- Lighter shade of blue -->
     <color name="dark_blue">#1565C0</color> <!-- Darker shade of blue -->
+    <color name="primary_color">#2196F3</color>
+    <color name="primary_dark">#1976D2</color>
+    <color name="accent_color">#FF4081</color>
+    <color name="background_color">#F5F5F5</color>
+    <color name="card_background">#FFFFFF</color>
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="divider_color">#BDBDBD</color>
+    <!-- Toggle button colors -->
+    <color name="block_color">#F44336</color>
+    <color name="unblock_color">#4CAF50</color>
+    <!-- Button states -->
+    <color name="block_color_pressed">#D32F2F</color>
+    <color name="unblock_color_pressed">#388E3C</color>
 </resources>

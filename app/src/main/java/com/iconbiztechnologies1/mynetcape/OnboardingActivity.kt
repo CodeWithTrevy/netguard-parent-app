@@ -16,16 +16,42 @@ class OnboardingActivity : AppCompatActivity() {
 
         val viewPager = findViewById<ViewPager2>(R.id.viewPager)
         val tabLayout = findViewById<TabLayout>(R.id.tabLayout)
+        val btnGetStarted = findViewById<Button>(R.id.btnGetStarted)
 
         // Set Adapter
         val images = listOf(R.drawable.kid1, R.drawable.kid2, R.drawable.kid3, R.drawable.imge4)
-        viewPager.adapter = OnboardingAdapter(images, this)
+        val descriptions = listOf(
+            "First onboarding screen showing a child",
+            "Second onboarding screen with another child",
+            "Third onboarding screen with a third child",
+            "Fourth onboarding screen with final image"
+        )
 
-        // Link TabLayout with ViewPager
-        TabLayoutMediator(tabLayout, viewPager) { _, _ -> }.attach()
+        viewPager.adapter = OnboardingAdapter(images, this, descriptions)
+
+        // Set content descriptions for better accessibility
+        viewPager.importantForAccessibility = ViewPager2.IMPORTANT_FOR_ACCESSIBILITY_YES
+
+        // Link TabLayout with ViewPager and add descriptive tab titles
+        TabLayoutMediator(tabLayout, viewPager) { tab, position ->
+            // You can optionally set text for each tab
+            // tab.text = "Page ${position + 1}"
+
+            // Set content description for each tab
+            tab.contentDescription = "Page ${position + 1}: ${descriptions[position]}"
+        }.attach()
+
+        // Register page change callbacks for announcements
+        viewPager.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
+            override fun onPageSelected(position: Int) {
+                super.onPageSelected(position)
+                // Announce page change for accessibility
+                viewPager.announceForAccessibility("Showing ${descriptions[position]}")
+            }
+        })
 
         // Listen for Get Started Button
-        findViewById<Button>(R.id.btnGetStarted).setOnClickListener {
+        btnGetStarted.setOnClickListener {
             val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
             finish()

@@ -1,4 +1,8 @@
 package com.iconbiztechnologies1.mynetcape
 
-class AppInfo {
-}
+data class AppInfo(
+    val packageName: String,
+    val appName: String,
+    val iconUrl: String = "",
+    var isBlocked: Boolean = false
+)

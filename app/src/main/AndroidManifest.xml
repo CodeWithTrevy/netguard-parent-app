@@ -15,6 +15,15 @@
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         tools:targetApi="31">
         <activity
+            android:name=".DownloadedApp"
+            android:exported="false" />
+<!--        <activity-->
+<!--            android:name=".InstalledDeviceApps"-->
+<!--            android:exported="false" />-->
+        <activity
+            android:name=".ScreenTimeActivity"
+            android:exported="false" />
+        <activity
             android:name=".DeviceActivity"
             android:exported="false" />
         <activity
@@ -22,7 +31,9 @@
             android:exported="false" />
         <activity
             android:name=".HomeActivity"
-            android:exported="false" /> <!-- SplashActivity as the launcher activity -->
+            android:exported="false">
+
+        </activity> <!-- SplashActivity as the launcher activity -->
         <activity
             android:name=".SplashActivity"
             android:exported="true">
@@ -39,10 +50,10 @@
             android:name=".LoginActivity"
             android:exported="true"
             android:theme="@style/Theme.MyNetcape" />
-        <activity
-            android:name=".SignUpActivity"
-            android:exported="true"
-            android:theme="@style/Theme.MyNetcape" /> <!-- MainActivity -->
+<!--        <activity-->
+<!--            android:name=".SignUpActivity"-->
+<!--            android:exported="true"-->
+<!--            android:theme="@style/Theme.MyNetcape" /> &lt;!&ndash; MainActivity &ndash;&gt;-->
         <activity
             android:name=".MainActivity"
             android:exported="true" />

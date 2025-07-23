@@ -1,4 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/appmonitoring"
+        android:icon="@drawable/baseline_assignment_24"
+        android:title="Monitor Apps" />
+
+    <item
+        android:id="@+id/setScreenTime"
+        android:icon="@drawable/baseline_more_time_24"
+        android:title="Set Screen Time" />
+
+    <item
+        android:id="@+id/block"
+        android:icon="@drawable/baseline_app_blocking_24"
+        android:title="Block Apps" />
+
+    <item
+        android:id="@+id/help"
+        android:icon="@drawable/baseline_help_outline_24"
+        android:title="Help and Support" />
+
+    <item
+        android:id="@+id/blnk"
+        android:title="" />
+    <item
+        android:id="@+id/blkd"
+        android:title="" />
+
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/baseline_logout_24"
+        android:title="Log Out" />
 
 </menu>

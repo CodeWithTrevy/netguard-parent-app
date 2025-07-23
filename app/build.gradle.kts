@@ -8,10 +8,15 @@ android {
     namespace = "com.iconbiztechnologies1.mynetcape"
     compileSdk = 35
 
+    buildFeatures {
+        viewBinding = true
+        buildConfig = true  // Added to enable BuildConfig generation
+    }
+
     defaultConfig {
         applicationId = "com.iconbiztechnologies1.mynetcape"
         minSdk = 24
-        targetSdk = 35 // Match compileSdk
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
@@ -46,19 +51,33 @@ dependencies {
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
 
-    // Firebase (Ensure latest version)
-    implementation(platform("com.google.firebase:firebase-bom:33.8.0"))
+    // Firebase (Updated to latest version)
+    implementation(platform("com.google.firebase:firebase-bom:33.9.0"))
     implementation("com.google.firebase:firebase-analytics")
     implementation("com.google.firebase:firebase-firestore")
     implementation("com.google.firebase:firebase-auth")
-    implementation ("com.squareup.picasso:picasso:2.8")
 
+    // Picasso (For Image Loading)
+    implementation("com.squareup.picasso:picasso:2.8")
 
     // Secure Password Hashing
-    implementation("at.favre.lib:bcrypt:0.10.2") // More reliable than jBCrypt
+    implementation("at.favre.lib:bcrypt:0.10.2")
+
+    // Kotlin Coroutines for Firebase (Optional)
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.7.3")
 
     // Testing
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    // Glide for image loading
+    implementation ("com.github.bumptech.glide:glide:4.15.1")
+    annotationProcessor ("com.github.bumptech.glide:compiler:4.15.1")
+    // Material Design Components
+    implementation ("com.google.android.material:material:1.9.0")
+    // CardView
+    implementation ("androidx.cardview:cardview:1.0.0")
+    // RecyclerView
+    implementation ("androidx.recyclerview:recyclerview:1.3.0")
 }
